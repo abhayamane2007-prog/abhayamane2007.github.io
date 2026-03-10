@@ -9,6 +9,9 @@
 
 <header>
 <h1>Welcome to Solapur</h1>
+<div class="slideshow">
+<img id="slide" src="images/pandharpur1.jpg" width="600">
+</div>
 <nav>
 <a href="index.html">Home</a>
 <a href="places.html">Places</a>
@@ -37,6 +40,28 @@
 <p>This website introduces some of the most important places, traditions, travel information, and local food that make Solapur a unique destination.</p>
 
 </section>
+
+<script>
+let images = [
+"images/pandharpur1.jpg",
+"images/siddeshwar.jpg",
+"images/tuljapur1.jpg"
+];
+
+let i = 0;
+
+function slideShow() {
+i++;
+
+if(i >= images.length){
+i = 0;
+}
+
+document.getElementById("slide").src = images[i];
+}
+
+setInterval(slideShow, 3000);
+</script>
 
 </body>
 </html>
