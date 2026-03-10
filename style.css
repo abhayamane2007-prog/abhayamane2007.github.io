@@ -33,6 +33,18 @@ button{
 background:orange;
 border:none;
 padding:10px;
+
+.slideshow {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slideshow img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
 color:white;
 font-size:16px;
 cursor:pointer;
