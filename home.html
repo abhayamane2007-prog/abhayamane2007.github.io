@@ -20,6 +20,7 @@
 <a href="food.html">Food</a>
 <a href="enquiry.html">Enquiry</a>
 <a href="gallery.html">Gallery</a>
+<button onclick="toggleDarkMode()">Dark Mode</button>
 </nav>
 </header>
 
@@ -61,6 +62,11 @@ document.getElementById("slide").src = images[i];
 }
 
 setInterval(slideShow, 3000);
+</script>
+<script>
+function toggleDarkMode() {
+document.body.classList.toggle("dark-mode");
+}
 </script>
   
 
