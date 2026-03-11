@@ -68,6 +68,22 @@ function toggleDarkMode() {
 document.body.classList.toggle("dark-mode");
 }
 </script>
+
+<script>
+document.getElementById("reviewForm").addEventListener("submit", function(e) {
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+let review = document.getElementById("review").value;
+
+let reviewBox = document.createElement("p");
+reviewBox.innerHTML = "<strong>" + name + ":</strong> " + review;
+
+document.getElementById("reviews").appendChild(reviewBox);
+
+document.getElementById("reviewForm").reset();
+});
+</script>
   
 
 </body>
@@ -81,6 +97,22 @@ document.body.classList.toggle("dark-mode");
 src="https://www.google.com/maps?q=Solapur&output=embed"
 width="700"
 height="450"
+
+
+<h2>Tourist Reviews</h2>
+
+<form id="reviewForm">
+<label>Name:</label><br>
+<input type="text" id="name" required><br><br>
+
+<label>Your Review:</label><br>
+<textarea id="review" rows="4" cols="40" required></textarea><br><br>
+
+<button type="submit">Submit Review</button>
+</form>
+
+<h3>What Visitors Say:</h3>
+<div id="reviews"></div>
 style="border:0;">
 </iframe>
 </div>
