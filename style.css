@@ -58,6 +58,17 @@ background-color: #1f1f1f;
 .dark-mode a {
 color: #90caf9;
 }
+
+#reviews p{
+background:#f2f2f2;
+padding:10px;
+border-radius:5px;
+margin:10px 0;
+}
+
+form{
+margin-top:20px;
+}
 color:white;
 font-size:16px;
 cursor:pointer;
